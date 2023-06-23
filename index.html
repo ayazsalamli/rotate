@@ -16,6 +16,7 @@
           margin-left: 450px;
           position:absolute;
         }
+       
         .gapi{
           top:280px;
           margin-left: 450px;
@@ -32,17 +33,32 @@
         left: 30px;
         
      }
+     .r:hover{
+      transform: rotate(-30deg);
+      transition: 1s;
+     }
      .r:hover~.top{
       translate: 400px;
       transition: 1s;
      }
-   
+     .r:hover~h1{
+          transition: 2s;
+          scale: 1;
+     }
+     h1{
+       scale: 0;
+     }
+    .r:hover~.gapici{
+      translate: 30px;
+      transition: 2s;
+    }
      
     </style>
 </head>
 <body>
     <div class="r"><img src="r.png" width="100px"></div>
     <div class="gapi"><img src="qapi.png" width="250px"></div>
+    <h1>GOAL GOAL GOAL!!!!</h1>
 
     <div class="gapici"><img src="qapici.png" width="100px"></div>
     <div class="top"><img src="top.png" width="30px"></div>
